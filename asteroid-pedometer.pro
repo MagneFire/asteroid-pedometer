@@ -1,4 +1,4 @@
-TARGET = asteroid-hrm
+TARGET = asteroid-pedometer
 CONFIG += asteroidapp
 
 SOURCES +=     main.cpp

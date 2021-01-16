@@ -25,18 +25,17 @@ Application {
     centerColor: "#b04d1c"
     outerColor: "#421c0a"
 
-    property int bpm: 0;
+    property int steps: 0;
 
-    HrmSensor {
+    StepCounterSensor {
         active: true
-        onReadingChanged: app.bpm = reading.bpm;
-        onStatusChanged: console.log("status changed to: " + str(status))
+        onReadingChanged: app.steps = reading.steps;
     }
 
     Label {
-        id: bpmText
+        id: stepsText
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
-        text: app.bpm
+        text: app.steps
     }
 }

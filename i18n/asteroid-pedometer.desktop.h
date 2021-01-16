@@ -2,4 +2,4 @@
  * will be integrated to i18n/.ts files, translated on Weblate and then merged
  * back with the .desktop.template file into a single .desktop file. */
 
-QObject::tr("Heart Rate Monitor");
+QObject::tr("Pedometer");
